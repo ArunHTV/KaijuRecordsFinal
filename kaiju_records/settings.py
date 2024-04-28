@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&obigr1dcc1b#_0f#xllq9uq$vjaisz3j*^pl&9a-^c#%zhd2^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '8000-arunhtv-kaijurecordsfin-3f51wswn6x8.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['8000-arunhtv-kaijurecordsfin-le01vupa4tq.ws-eu110.gitpod.io']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,10 @@ ROOT_URLCONF = 'kaiju_records.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
