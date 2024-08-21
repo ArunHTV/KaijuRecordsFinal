@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,10 +25,10 @@ SECRET_KEY = 'django-insecure-a_ab4_b46p9m+gvl!g98py(!5(!fya7p64_%d!07)st1-@sgp$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-arunhtv-kaijurecordsfin-qfx16ivdcsl.ws-eu115.gitpod.io' ]
+ALLOWED_HOSTS = ['8000-arunhtv-kaijurecordsfin-qokwzanjeoc.ws-eu115.gitpod.io' ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-arunhtv-kaijurecordsfin-qfx16ivdcsl.ws-eu115.gitpod.io',
+    'https://8000-arunhtv-kaijurecordsfin-qokwzanjeoc.ws-eu115.gitpod.io/',
 ]
 
 
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -63,7 +64,10 @@ ROOT_URLCONF = 'kaiju_records.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join (BASE_DIR, 'templates'),
+            os.path.join (BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
