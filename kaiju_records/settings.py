@@ -25,10 +25,10 @@ SECRET_KEY = 'django-insecure-a_ab4_b46p9m+gvl!g98py(!5(!fya7p64_%d!07)st1-@sgp$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-arunhtv-kaijurecordsfin-fm1thf23wl8.ws-eu116.gitpod.io']
+ALLOWED_HOSTS = ['8000-arunhtv-kaijurecordsfin-i6jeywu2cdd.ws-eu117.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-arunhtv-kaijurecordsfin-fm1thf23wl8.ws-eu116.gitpod.io',
+    'http://8000-arunhtv-kaijurecordsfin-i6jeywu2cdd.ws-eu117.gitpod.io/',
 ]
 
 
