@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-arunhtv-kaijurecordsfin-i6jeywu2cdd.ws-eu117.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://8000-arunhtv-kaijurecordsfin-i6jeywu2cdd.ws-eu117.gitpod.io/',
+    'https://8000-arunhtv-kaijurecordsfin-i6jeywu2cdd.ws-eu117.gitpod.io',
 ]
 
 
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'products' ,
 ]
 
 MIDDLEWARE = [
