@@ -17,10 +17,9 @@
                 Records
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="record-link">
-                <a href="" class="dropdown-item">Albums</a>
-                <a href="" class="dropdown-item">Singles</a>
-                <a href="" class="dropdown-item">Pre-Owned</a>
-                <a href="" class="dropdown-item">All Records</a>
+                <a href="{% url 'products' %}?category=vinyl_albums" class="dropdown-item">Albums</a>
+                <a href="{% url 'products' %}?category=vinyl_singles" class="dropdown-item">Singles</a>
+                <a href="{% url 'products' %}?category=vinyl_albums,vinyl_singles" class="dropdown-item">All Records</a>
             </div>
         </li>
 
@@ -29,10 +28,9 @@
                 CD's
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="cd-link">
-                <a href="" class="dropdown-item">Albums</a>
-                <a href="" class="dropdown-item">Singles</a>
-                <a href="" class="dropdown-item">Pre-Owned</a>
-                <a href="" class="dropdown-item">All CD's</a>
+                <a href="{% url 'products' %}?category=cd_albums" class="dropdown-item">Albums</a>
+                <a href="{% url 'products' %}?category=cd_singles" class="dropdown-item">Singles</a>
+                <a href="{% url 'products' %}?category=cd_albums, cd_singles" class="dropdown-item">All CD's</a>
             </div>
         </li>
 
